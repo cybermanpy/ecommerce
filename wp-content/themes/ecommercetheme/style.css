@@ -4,17 +4,43 @@
  Description:  Tema hijo de ridizain
  Author:       Diego Saldivar
  Author URI:   http://www.softnando.com
- Template:     ridizain
+ Template:     storefront
  Version:      0.1
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  ridizain-child
+ Text Domain:  storefront-child
 */
 
-@import url("../ridizain/style.css");                                                                                                                    
+@import url("../storefront/style.css");
+
+.main-navigation ul, .secondary-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: block;
+  margin-left: 30%;
+  margin-top: -100px;
+}
+
+.woocommerce-active .site-header .site-header-cart {
+  width: 21.7391304348%;
+  float: right;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-top: 1.618em;
+  margin-top: -100px;
+}
+
+.woocommerce-breadcrumb {
+  margin-bottom: 4.236em;
+  font-size: .857em;
+  padding: 1em 0;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  display: none;
+}
 
 /* Aquí empieza la personalización de tu tema */
 
-.woocommerce ul.products li.product .button {
+/*.woocommerce ul.products li.product .button {
   background-color: cadetblue;
   margin-top: 1em;
 }
@@ -47,7 +73,7 @@ body { background-color: #f5f5f5;}
 
 /* Change theme's color scheme */
 
-a:active,
+/*a:active,
 a:hover {
 	color: #03c1bb;
 }
@@ -328,7 +354,7 @@ input[type="submit"]:focus {
 
 /* Add in WooCommerce CSS adjustments*/
 
-.woocommerce .cart-collaterals .cart_totals table th, .woocommerce-page .cart-collaterals .cart_totals table th {
+/*.woocommerce .cart-collaterals .cart_totals table th, .woocommerce-page .cart-collaterals .cart_totals table th {
     padding: 6px 12px 0px 6px; width: 100%; }
   
 .woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, 

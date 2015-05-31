@@ -71,6 +71,16 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', false);
 
+/* Multisite */
+define('WP_ALLOW_MULTISITE', true);
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', true);
+$base='/';
+define('DOMAIN_CURRENT_SITE', 'wp.softnando.com');
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
+
 /* ¡Eso es todo, deja de editar! Feliz blogging */
 
 /** WordPress absolute path to the Wordpress directory. */
@@ -80,6 +90,7 @@ if ( !defined('ABSPATH') )
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
 
+
 /* Conexion ssh para wordpress */
 define('FS_METHOD', 'direct');
 define('FTP_BASE', '/var/www/wp/');
@@ -88,3 +99,4 @@ define('FTP_CONTENT_DIR', 'wp-content/');
 define('FTP_PASS', '(fernando2106)');
 define('FTP_HOST', '54.69.335.63');
 define('FTP_SSL', false); */
+
